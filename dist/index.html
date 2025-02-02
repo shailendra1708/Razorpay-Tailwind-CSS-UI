@@ -10,7 +10,7 @@
     <nav class="bg-deepBlue">
       <!-- relative w-[1080px] mx-auto flex items-center justify-between -->
       <div
-      class="relative w-full mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-12"
+        class="relative w-full mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-12"
       >
         <a href="/" class="cursor-pointer py-2 pr-7">
           <img
@@ -79,35 +79,118 @@
           </li>
         </ul>
 
-
-        <div class="flex space-x-6" >
-          <div class="relative inline-block text-left group">
-            <!-- Button with Indian Flag initially shown -->
-            <button type="button" class="inline-flex justify-center w-full shadow-sm px-4 py-2 bg-deepBlue text-sm font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-              <img src="Images/Flag.png" alt="India" class="w-8 h-6">
+        <div class="flex space-x-6">
+          <!-- Button with Indian Flag Only -->
+          <div class="relative inline-block">
+            <button
+              type="button"
+              class="inline-flex justify-center w-full shadow-sm px-4 py-2 bg-deepBlue text-sm font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            >
+              <img src="Images/Flag.png" alt="India" class="w-8 h-6" />
             </button>
-        
-            <!-- Dropdown menu that appears on hover -->
-            <div class="absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden group-hover:block">
-              <div class="py-1" role="none">
-                <a href="#" class="text-gray-700 block px-4 py-2 text-sm flex items-center">
-                  <img src="Images/flag2.png" alt="USA" class="w-6 h-4 mr-2"> USA
-                </a>
-                <a href="#" class="text-gray-700 block px-4 py-2 text-sm flex items-center">
-                  <img src="Images/flag3.png" alt="Germany" class="w-6 h-4 mr-2"> Germany
-                </a>
-                <a href="#" class="text-gray-700 block px-4 py-2 text-sm flex items-center">
-                  <img src="Images/Flag4.png" alt="UK" class="w-6 h-4 mr-2"> United Kingdom
-                </a>
-              </div>
-            </div>
           </div>
-          <button type="button" class="bg-transparent py-2 px-4 font-ubuntu text-white border-lightBlue border rounded-sm font-semibold">Log in</button>
-          <button type="button" class="bg-white py-2 px-4 font-ubuntu text-lightBlue border-lightBlue hover:text-light border rounded-sm  transition duration-200 font-semibold">Sign Up</button>
-        </div>
-          
+
+          <!-- Login Button -->
+          <button
+            type="button"
+            class="bg-transparent py-2 px-4 font-ubuntu text-white border-lightBlue border rounded-sm font-semibold bg-sky-500 hover:bg-sky-700"
+          >
+            Log in
+          </button>
+
+          <!-- Sign Up Button -->
+          <button
+            type="button"
+            class="bg-white py-2 px-4 font-ubuntu text-lightBlue border-lightBlue hover:text-light border rounded-sm transition duration-200 font-semibold"
+          >
+            Sign Up
+          </button>
         </div>
       </div>
     </nav>
+
+    <section class="bg-deepBlue relative py-16 font-ubuntu">
+      <div
+        class="flex w-10/12 flex-col lg:flex-row justify-between items-center mx-auto gap-12"
+      >
+        <!-- Left Text Section -->
+        <div class="space-y-6 max-w-xl text-left flex-shrink-0">
+          <h1 class="text-lightBlue500 text-5xl font-bold whitespace-nowrap">
+            Effortless Banking
+          </h1>
+          <h2 class="text-white text-4xl font-semibold whitespace-nowrap">
+            For India's Finest Disruptors
+          </h2>
+          <p class="text-white text-xl">
+            Powerful Automation | Smart Dashboard | Integrated Access
+          </p>
+          <button
+            type="button"
+            class="bg-lightBlue500 hover:bg-lightBlue400 text-white px-6 py-3 rounded-xl mt-4 shadow-lg"
+          >
+            Sign Up Now
+          </button>
+        </div>
+
+        <!-- Right Image Section (Large Image) -->
+
+        <div class="w-full lg:w-2/3">
+          <img
+            src="Images/asset 5.png"
+            alt="Hero Image"
+            class="max-w-full h-auto object-cover lg:max-h-[500px]"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="flex justify-center items-center mt-4 bg-gray-100">
+      <div
+        class="group flex flex-row bg-white shadow-2xl rounded-2xl p-5 hover:shadow-3xl transition-shadow"
+      >
+        <!-- Links Section -->
+        <div class="flex space-x-4">
+          <a
+            href="#"
+            class="text-black-700 m-3 py-2 px-4 rounded-full bg-blue-100 hover:bg-blue-200 font-medium transition"
+          >
+            I'm here to
+          </a>
+          <a
+            href="#"
+            class="text-black-700 m-3 py-2 px-4 rounded-full bg-blue-100 hover:bg-blue-200 font-medium transition"
+          >
+            Access Payment
+          </a>
+          <a
+            href="#"
+            class="text-black-700 m-3 py-2 px-4 rounded-full bg-blue-100 hover:bg-blue-200 font-medium transition"
+          >
+            Make Payment
+          </a>
+          <a
+            href="#"
+            class="text-black-700 m-3 py-2 px-4 rounded-full bg-blue-100 hover:bg-blue-200 font-medium transition"
+          >
+            Start Business Banking
+          </a>
+          <a
+            href="#"
+            class="text-black-700 m-3 py-2 px-4 rounded-full bg-blue-100 hover:bg-blue-200 font-medium transition"
+          >
+            Get Credit Loans
+          </a>
+          <a
+            href="#"
+            class="text-black-700 m-3 py-2 px-4 rounded-full bg-blue-100 hover:bg-blue-200 font-medium transition"
+          >
+            Automate Payroll
+          </a>
+        </div>
+        <p class="text-gray-600 m-3 py-2 px-4 ml-6 font-semibold">
+          // Find the best product for your business
+        </p>
+      </div>
+    </section>
   </body>
 </html>
