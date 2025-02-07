@@ -5,10 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
     <title>RazorPay</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Tailwind Custom Configuration
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              "infinite-scroll": "infinite-scroll 50s linear infinite",
+            },
+            keyframes: {
+              "infinite-scroll": {
+                from: { transform: "translateX(0)" },
+                to: { transform: "translateX(-100%)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Alpine.js for Dynamic Cloning -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+
+    <style>
+      /* Fallback for mask-image gradient issue in some browsers */
+      .gradient-mask {
+        -webkit-mask-image: linear-gradient(
+          to right,
+          transparent 0,
+          black 128px,
+          black calc(100% - 128px),
+          transparent 100%
+        );
+        mask-image: linear-gradient(
+          to right,
+          transparent 0,
+          black 128px,
+          black calc(100% - 128px),
+          transparent 100%
+        );
+      }
+    </style>
   </head>
+
   <body>
     <nav class="bg-deepBlue">
-      <!-- relative w-[1080px] mx-auto flex items-center justify-between -->
       <div
         class="relative w-full mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-12"
       >
@@ -80,7 +127,6 @@
         </ul>
 
         <div class="flex space-x-6">
-          <!-- Button with Indian Flag Only -->
           <div class="relative inline-block">
             <button
               type="button"
@@ -90,7 +136,6 @@
             </button>
           </div>
 
-          <!-- Login Button -->
           <button
             type="button"
             class="bg-transparent py-2 px-4 font-ubuntu text-white border-lightBlue border rounded-sm font-semibold bg-sky-500 hover:bg-sky-700"
@@ -98,7 +143,6 @@
             Log in
           </button>
 
-          <!-- Sign Up Button -->
           <button
             type="button"
             class="bg-white py-2 px-4 font-ubuntu text-lightBlue border-lightBlue hover:text-light border rounded-sm transition duration-200 font-semibold"
@@ -109,11 +153,11 @@
       </div>
     </nav>
 
-    <section class="bg-deepBlue relative py-16 font-ubuntu">
+    <!-- Hero Section -->
+    <section class="bg-deepBlue relative py-16 font-ubuntu z-10">
       <div
         class="flex w-10/12 flex-col lg:flex-row justify-between items-center mx-auto gap-12"
       >
-        <!-- Left Text Section -->
         <div class="space-y-6 max-w-xl text-left flex-shrink-0">
           <h1 class="text-lightBlue500 text-5xl font-bold whitespace-nowrap">
             Effortless Banking
@@ -132,8 +176,6 @@
           </button>
         </div>
 
-        <!-- Right Image Section (Large Image) -->
-
         <div class="w-full lg:w-2/3">
           <img
             src="Images/asset 5.png"
@@ -144,6 +186,7 @@
       </div>
     </section>
 
+    <!-- New Section Above Logo Carousel -->
     <section class="flex justify-center items-center mt-4 bg-gray-100">
       <div
         class="group flex flex-row bg-white shadow-2xl rounded-2xl p-5 hover:shadow-3xl transition-shadow"
@@ -190,6 +233,126 @@
         <p class="text-gray-600 m-3 py-2 px-4 ml-6 font-semibold">
           // Find the best product for your business
         </p>
+      </div>
+    </section>
+
+    <section>
+      <!-- Logo Carousel  -->
+      <div
+        x-data="{}"
+        x-init="$nextTick(() => { let ul = $refs.logos; ul.insertAdjacentHTML('afterend', ul.outerHTML); ul.nextSibling.setAttribute('aria-hidden', 'true'); })"
+        class="w-full inline-flex flex-nowrap overflow-hidden gradient-mask mt-8"
+      >
+        <ul
+          x-ref="logos"
+          class="flex items-center [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+        >
+          <li>
+            <img
+              src="./Images/asset 8.png"
+              alt="Zoho"
+              class="w-32 h-32 object-contain"
+            />
+          </li>
+          <li>
+            <img
+              src="./Images/asset 9.png"
+              alt="Unacademy"
+              class="w-32 h-32 object-contain"
+            />
+          </li>
+          <li>
+            <img
+              src="./Images/asset 10.png"
+              alt="Urban company"
+              class="w-32 h-32 object-contain"
+            />
+          </li>
+          <li>
+            <img
+              src="./Images/asset 11.png"
+              alt="Swiggy"
+              class="w-32 h-32 object-contain"
+            />
+          </li>
+          <li>
+            <img
+              src="./Images/asset 12.png"
+              alt="Paisa Bazar"
+              class="w-32 h-32 object-contain"
+            />
+          </li>
+          <li>
+            <img
+              src="./Images/asset 13.png"
+              alt="Naykaa"
+              class="w-32 h-32 object-contain"
+            />
+          </li>
+          <li>
+            <img
+              src="./Images/asset 14.png"
+              alt="Zerodha"
+              class="w-32 h-32 object-contain"
+            />
+          </li>
+          <li>
+            <img
+              src="./Images/asset 15.png"
+              alt="Goibibo"
+              class="w-32 h-32 object-contain"
+            />
+          </li>
+          <li>
+            <img
+              src="./Images/asset 16.png"
+              alt="cure.fit"
+              class="w-32 h-32 object-contain"
+            />
+          </li>
+          <li>
+            <img
+              src="./Images/asset 17.png"
+              alt="cleartax"
+              class="w-32 h-32 object-contain"
+            />
+          </li>
+          <li>
+            <img
+              src="./Images/asset 18.png"
+              alt="Bookmyshow"
+              class="w-32 h-32 object-contain"
+            />
+          </li>
+          <li>
+            <img
+              src="./Images/asset 19.png"
+              alt="BMW"
+              class="w-32 h-32 object-contain"
+            />
+          </li>
+          <li>
+            <img
+              src="./Images/asset 20.png"
+              alt="Ather"
+              class="w-32 h-32 object-contain"
+            />
+          </li>
+          <li>
+            <img
+              src="./Images/asset 21.png"
+              alt="Apollo"
+              class="w-32 h-32 object-contain"
+            />
+          </li>
+          <li>
+            <img
+              src="./Images/asset 22.png"
+              alt="NIIT"
+              class="w-32 h-32 object-contain"
+            />
+          </li>
+        </ul>
       </div>
     </section>
   </body>
