@@ -51,6 +51,21 @@
           transparent 100%
         );
       }
+
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      .animate-marquee {
+        display: inline-block;
+        min-width: 100%;
+        animation: marquee 18s linear infinite;
+      }
     </style>
   </head>
 
@@ -663,6 +678,40 @@
                 >
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-slate-800">
+        <div class="overflow-hidden whitespace-nowrap bg-green-700 py-4">
+          <div
+            class="flex animate-marquee space-x-8 text-xl font-bold text-white">
+            <span>N •</span>
+            <span>PHP •</span>
+            <span>NODE JS •</span>
+            <span>CURL •</span>
+            <span>JAVA •</span>
+            <span>PYTHON •</span>
+            <span>PHP •</span>
+            <span>NODE JS •</span>
+            <span>CURL •</span>
+            <span>JAVA •</span>
+            <span>CURL •</span>
+            <span>JAVA •</span>
+            <span>N •</span>
+            <span>PHP •</span>
+            <span>NODE JS •</span>
+            <span>CURL •</span>
+            <span>JAVA •</span>
+            <span>PYTHON •</span>
+            <span>PHP •</span>
+            <span>NODE JS •</span>
+            <span>CURL •</span>
+            <span>JAVA •</span>
+            <span>CURL •</span>
+            <span>JAVA •</span>
           </div>
         </div>
       </div>
