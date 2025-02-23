@@ -687,7 +687,8 @@
       <div class="bg-slate-800">
         <div class="overflow-hidden whitespace-nowrap bg-green-700 py-4">
           <div
-            class="flex animate-marquee space-x-8 text-xl font-bold text-white">
+            class="flex animate-marquee space-x-8 text-xl font-bold text-white"
+          >
             <span>N •</span>
             <span>PHP •</span>
             <span>NODE JS •</span>
@@ -716,5 +717,88 @@
         </div>
       </div>
     </section>
+
+    <body>
+      <section class="bg-slate-900">
+        <div class="ml-20">
+          <div class="text-6xl font-semibold pt-20 ml-40">
+            <p class="text-white">Razorpay is built</p>
+            <p class="text-yellow-50">for developers by developers</p>
+          </div>
+          <div class="flex ml-40 mt-16 space-x-10">
+            <div>
+              <p class="text-white font-medium text-2xl">Integrations</p>
+              <p class="text-gray-500 font-bold pt-3">
+                Find all popular platform SDKs, plugin,
+              </p>
+              <p class="text-gray-500 font-bold">
+                server integrations in our integration stack.
+              </p>
+              <p class="text-white font-bold mt-5">View Docs</p>
+            </div>
+            <div>
+              <p class="text-white font-medium text-2xl">API Reference</p>
+              <p class="pt-3 text-gray-500 font-bold">
+                Comprehensive documentation to build
+              </p>
+              <p class="text-gray-500 font-bold">powerful payment solutions.</p>
+              <p class="text-white font-bold mt-5">View Docs</p>
+            </div>
+            <div>
+              <p class="text-white font-medium text-2xl">Webhooks</p>
+              <p class="pt-3 text-gray-500 font-bold">
+                Receive real-time notifications for all
+              </p>
+              <p class="text-gray-500 font-bold">
+                payment related transactions and events.
+              </p>
+              <p class="text-white font-bold mt-5">View Docs</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex justify-center bg-slate-900 space-x-28 mt-28 h-[500px]"
+        >
+          <div>
+            <p class="mt-20 text-white font-bold text-4xl">Try it out</p>
+            <p class="text-white font-bold text-4xl">for yourself</p>
+          </div>
+          <div
+            class="relative bg-gray-800 text-white font-mono p-4 rounded-lg shadow-lg w-[700px] h-[350px] overflow-hidden"
+          >
+            <div
+              class="flex justify-between items-center bg-gray-700 px-3 py-2 rounded-t-lg"
+            >
+              <div class="flex space-x-2">
+                <span class="w-3 h-3 bg-red-500 rounded-full"></span>
+                <span class="w-3 h-3 bg-yellow-500 rounded-full"></span>
+                <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+              </div>
+              <span class="text-sm"></span>
+            </div>
+            <pre class="p-3 text-sm overflow-x-auto">
+  <span class="text-blue-400">curl</span> -X POST <span class="text-green-400">https://api.razorpay.com/v1/orders</span>
+  
+  -U [YOUR_KEY_ID]:[YOUR_KEY_SECRET]
+  
+  -H <span class="text-yellow-400">'content-type:application/json'</span>
+  
+  -d '{
+      "amount": 500,
+      "currency": "INR",
+      "receipt": "qwsaq1",
+      "partial_payment": true,
+      "first_payment_min_amount": 230
+  }'
+                  </pre>
+            <button
+              class="absolute bottom-3 right-3 bg-blue-500 text-white px-3 py-1 rounded-md opacity-0 hover:opacity-100 transition duration-300"
+            >
+              Take me to the code
+            </button>
+          </div>
+        </div>
+      </section>
+    </body>
   </body>
 </html>
