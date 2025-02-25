@@ -1,16 +1,16 @@
 # Razorpay-Tailwind-CSS-UI ✨
 
-A sleek and modern UI designed with **Tailwind CSS** and integrated with **Razorpay** to provide a seamless payment experience. Perfect for e-commerce sites, donation pages, or any platform that needs a stylish, functional payment interface.
+**Razorpay-Tailwind-CSS-UI** is a sleek, modern UI built with **Tailwind CSS**, designed specifically to showcase Razorpay's payment interface. This template is perfect for websites like e-commerce stores, donation pages, or any platform needing a stylish and functional **payment UI**.
 
-> **Note:** The UI is **not fully responsive** at the moment. Adjustments for responsiveness are still in progress.
+> **Note:** The UI is not fully responsive at the moment. Adjustments for different screen sizes are still in progress.
 
 ## 🎯 Features
 
-- **💡 Responsive Design (in progress):** Built with Tailwind CSS, but some sections are still being optimized for various screen sizes.
-- **💳 Razorpay Integration:** Smooth, ready-to-use integration with Razorpay’s payment gateway.
-- **🎨 Customizable Components:** Easy-to-customize UI components like buttons, forms, modals, and more.
-- **🚀 Fast and Lightweight:** Optimized for performance, ensuring a snappy experience for your users.
-- **🌟 Clean & Modern UI:** Enjoy a polished, professional design that fits any project.
+- **💡 Responsive Design (in progress)**: Built with **Tailwind CSS**, but some sections need further optimization for mobile and smaller screen sizes.
+- **💳 Razorpay UI**: Provides the look and feel of Razorpay's payment interface, ready to integrate with your back-end payment system.
+- **🎨 Customizable Components**: Easily customizable UI elements like buttons, forms, and modals.
+- **🚀 Fast and Lightweight**: Designed for quick load times and smooth user interactions.
+- **🌟 Clean & Modern UI**: A polished, professional design that’s perfect for any project.
 
 ## 🚀 Getting Started
 
