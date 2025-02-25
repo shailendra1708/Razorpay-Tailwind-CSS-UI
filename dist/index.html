@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
     <title>RazorPay</title>
 
     <!-- Tailwind CSS -->
@@ -25,61 +26,12 @@
           },
         },
       };
-    </script>
-
-    <!-- Alpine.js for Dynamic Cloning -->
-    <script
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
       defer
-    ></script>
+    </script>
 
     <style>
-      /* Fallback for mask-image gradient issue in some browsers */
-      .gradient-mask {
-        -webkit-mask-image: linear-gradient(
-          to right,
-          transparent 0,
-          black 128px,
-          black calc(100% - 128px),
-          transparent 100%
-        );
-        mask-image: linear-gradient(
-          to right,
-          transparent 0,
-          black 128px,
-          black calc(100% - 128px),
-          transparent 100%
-        );
-      }
-
-      @keyframes marquee {
-        0% {
-          transform: translateX(100%);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-
-      .animate-marquee {
-        display: inline-block;
-        min-width: 100%;
-        animation: marquee 18s linear infinite;
-      }
-
-      /* Marquee Animation */
-      @keyframes marquee {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-
-      .animate-marquee {
-        animation: marquee 15s linear infinite;
-      }
+     
     </style>
   </head>
 
@@ -973,7 +925,7 @@
     </section>
 
     <section>
-      <div class="flex justify-center items-center bg-pink-100 p-10 mt-10 rounded-lg shadow-md mx-auto max-w-7xl mb-10">
+      <div class="flex justify-center items-center bg-pink-100 p-6 rounded-lg shadow-md mt-6 mx-auto max-w-7xl mb-10">
         <div class="w-full">
           <h4 class="font-semibold text-lg mb-4 text-center">Disclaimer</h4>
           <p class="text-sm text-gray-700 mb-4">
